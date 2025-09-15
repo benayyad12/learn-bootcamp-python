@@ -27,10 +27,16 @@ scissors = '''
 ---.__(___)
 '''
 
+choices = [rock, paper, scissors]
+
 computer_choice = random.randint(0,2)
 user_choice = int(input("Choose 0: Rock , 1: Paper and 2: Scissors\n"))
 if user_choice not in [0,1,2]:
     user_choice = int(input("Choose a valid option =>  0: Rock , 1: Paper and 2: Scissors\n"))
+
+print(f"The computer choosed:\n {choices[computer_choice]}")
+print("\n\n")
+print(f"The user choosed:\n {choices[user_choice]}")
 
 if computer_choice == user_choice:
     print("It's a draw")
